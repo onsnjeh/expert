@@ -1,144 +1,15 @@
-
+<!-- nav -->
+<app-barre-rech></app-barre-rech>
 <!-- Main -->
- <nav class="navbar bg-body-tertiary ">
-  <div class="container-fluid ">
-    <form class="d-flex " role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
   <main class="py-6 bg-surface-secondary">
       <div class="container-fluid">
          <div class="row g-6 mb-6">
-             <div class="col-xl-3 col-sm-6 col-12">
-                 <div class="card shadow border-0">
-                     <div class="card-body">
-                         <div class="row">
-                             <div class="col"> <span class="h6 font-semibold text-muted text-sm d-block mb-2">Juridique</span> <span class="h3 font-bold mb-0">50</span> </div>
-                             <div class="col-auto">
-                                 <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle"> <i class="bi bi-bank2"></i>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xl-3 col-sm-6 col-12">
-                 <div class="card shadow border-0">
-                     <div class="card-body">
-                         <div class="row">
-                             <div class="col"> <span class="h6 font-semibold text-muted text-sm d-block mb-2">Social</span> <span class="h3 font-bold mb-0">60</span> </div>
-                             <div class="col-auto">
-                                 <div class="icon icon-shape bg-primary text-white text-lg rounded-circle"> <i class="bi bi-people"></i> </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xl-3 col-sm-6 col-12">
-                 <div class="card shadow border-0">
-                     <div class="card-body">
-                         <div class="row">
-                             <div class="col"> <span class="h6 font-semibold text-muted text-sm d-block mb-2">Fiscal</span> <span class="h3 font-bold mb-0">70</span> </div>
-                             <div class="col-auto">
-                                 <div class="icon icon-shape bg-info text-white text-lg rounded-circle"> <i class="bi bi-bank"></i>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-xl-3 col-sm-6 col-12">
-                 <div class="card shadow border-0">
-                     <div class="card-body">
-                         <div class="row">
-                             <div class="col"> <span class="h6 font-semibold text-muted text-sm d-block mb-2">Droit</span> <span class="h3 font-bold mb-0">100</span> </div>
-                             <div class="col-auto">
-                                 <div class="icon icon-shape bg-warning text-white text-lg rounded-circle"> <i class="bi bi-archive"></i>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
+             <!-- categorie -->
+             <app-meun-categ></app-meun-categ>
+             <!-- <router-outlet></router-outlet> -->
          </div>
-         <div class="card shadow border-0 mb-7">
-             <div class="card-header">
-                 <h5 class="mb-0">Files</h5>
-             </div>
-             <div class="table-responsive">
-                 <table class="table table-hover table-nowrap">
-                     <thead class="thead-light">
-                         <tr>
-                             <th scope="col">title</th>
-                             <th scope="col">Date</th>
-                             <th scope="col">Category</th>
-                             <th scope="col">taille</th>
-                             <th></th>
-                         </tr>
-                     </thead>
-                     <tbody>
-                         <tr>
-                             <td><a class="text-heading font-semibold" href="#"> file 1 </a> </td>
-                             <td> Feb 15, 2021 </td>
-                             <td class="text-heading font-semibold"> juridique </td>
-                             <td> 2Mg </td>
-                             <td class="text-end"> 
-                                 <a href="#" class="btn btn-sm btn-neutral">open</a> 
-                                 </td>
-                         </tr>
-                         <tr>
-                             <td><a class="text-heading font-semibold" href="#"> file 2 </a> </td>
-                             <td> Feb 15, 2021 </td>
-                             <td class="text-heading font-semibold">juridique</td>
-                             <td>2Mg </td>
-                             
-                             <td class="text-end"> <a href="#" class="btn btn-sm btn-neutral">open</a> 
-                                  </td>
-                         </tr>
-                         <tr>
-                             <td><a class="text-heading font-semibold" href="#"> file 3 </a> </td>
-                             <td> Feb 15, 2021 </td>
-                             <td class="text-heading font-semibold"> juridique</td>
-                             <td> 2Mg </td>
-                             <td class="text-end"> <a href="#" class="btn btn-sm btn-neutral">open</a>
-                                   </td>
-                         </tr>
-                         <tr>
-                             <td><a class="text-heading font-semibold" href="#"> file 4 </a> </td>
-                             <td> Feb 15, 2021 </td>
-                             <td class="text-heading font-semibold"> juridique</td>
-                             <td> 2Mg </td>
-                             <td class="text-end"> <a href="#" class="btn btn-sm btn-neutral">open</a> 
-                                  </td>
-                         </tr>
-                         <tr>
-                            <td><a class="text-heading font-semibold" href="#"> file 5 </a> </td>
-                            <td> Feb 15, 2021 </td>
-                            <td class="text-heading font-semibold"> juridique</td>
-                            <td> 2Mg </td>
-                            <td class="text-end"> <a href="#" class="btn btn-sm btn-neutral">open</a> 
-                                 </td>
-                        </tr>
-                        <tr>
-                            <td><a class="text-heading font-semibold" href="#"> file 6 </a> </td>
-                            <td> Feb 15, 2021 </td>
-                            <td class="text-heading font-semibold"> juridique</td>
-                            <td> 2Mg </td>
-                            <td class="text-end"> <a href="#" class="btn btn-sm btn-neutral">open</a> 
-                                 </td>
-                        </tr>
-                     </tbody>
-                    
-                 </table>
-                 
-             </div>
-             <!-- <div><a class="d-flex align-items-end flex-column mt-auto p-1"><i class="bi bi-arrow-right-circle"></i>
-             </a></div> -->
-             
-         </div>
-     </div>
+      </div>
     </main> 
- 
-	
+
+
+        
