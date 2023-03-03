@@ -7,7 +7,8 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./fullfiles.component.css']
 })
 export class FullfilesComponent {
-
+//liist
+active = 'top';
  //modal
  closeResult = '';
 

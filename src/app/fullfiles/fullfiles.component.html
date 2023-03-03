@@ -1,15 +1,58 @@
 <!-- nav -->
 <app-barre-rech></app-barre-rech>
 <!-- Main -->
-  <main class="py-6 bg-surface-secondary">
+<div class="container">
+ <main class="card p-3">
+    <nav class="nav flex-column nav-pills">
+<div class="d-flex">
+	<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+		<li ngbNavItem="top">
+			<a ngbNavLink>juridique</a>
+			<ng-template ngbNavContent>
+    <app-list-article></app-list-article>
+			</ng-template>
+		</li>
+		<li ngbNavItem="middle">
+			<a ngbNavLink>social</a>
+			<ng-template ngbNavContent>
+				<app-list-article></app-list-article>
+			</ng-template>
+		</li>
+		<li ngbNavItem="bottom">
+			<a ngbNavLink>fiscal</a>
+			<ng-template ngbNavContent>
+    <app-list-article></app-list-article>
+			</ng-template>
+		</li>
+	</ul>
+
+	<div [ngbNavOutlet]="nav" class="ms-4"></div>
+</div>
+</nav>
+
+</main>
+</div>
+<!-- <section class="section-intro padding-top-sm">
+ <div class="container">
+ <main class="card p-3">
+   <div class="row">
+     <aside class="col-lg-3"> 
+     <app-list-category></app-list-category>
+     </aside>
+     <div class="col-lg-9">
+       <app-article></app-article>
+     </div>
+   </div>
+ </main>
+ </div> 
+</section> -->
+  <!-- <main class="py-6 bg-surface-secondary">
       <div class="container-fluid">
          <div class="row g-6 mb-6">
-             <!-- categorie -->
              <app-meun-categ></app-meun-categ>
-             <!-- <router-outlet></router-outlet> -->
          </div>
       </div>
-    </main> 
+    </main>  -->
 
 
         

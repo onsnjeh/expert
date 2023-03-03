@@ -1,15 +1,15 @@
 <div class="navbar bg-body-tertiary ">
-<div class="container-fluid">
-<div ngbDropdown class="d-inline-block">
- <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-recherche par jour </button>
- <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="ng-pristine ng-valid ng-touched">
-  <button ngbDropdownItem>Tous les 7 jours</button>
-  <button ngbDropdownItem>Tous les 15 jours</button>
-  <button ngbDropdownItem>Tous les 30 jours</button>
+ <div class="container-fluid">
+ <div  class="d-inline-block">
+   <select class="form-select form-select-sm" >recherche par jour 
+    <option selected>Tous les 7 jours</option>
+    <option value="1">Tous les 15 jours</option>
+    <option value="2">Tous les 15 jours</option>
+  </select>
+  </div>
  </div>
-</div>
-</div>
+ </div>
+ 
 <!-- <div class="col text-end">
  <div ngbDropdown placement="top-end" class="d-inline-block">
   <button type="button" class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>Toggle dropup</button>

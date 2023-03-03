@@ -12,9 +12,13 @@ import { FullticketComponent } from './fullticket/fullticket.component';
 import { HomeComponent } from './home/home.component';
 import { ListArticleComponent } from './list-article/list-article.component';
 import { ListCategComponent } from './list-categ/list-categ.component';
+import { ListCategoryPageComponent } from './list-category-page/list-category-page.component';
+import { ListCategoryComponent } from './list-category/list-category.component';
 import { ListFileComponent } from './list-file/list-file.component';
 import { MessageComponent } from './message/message.component';
 import { MeunCategComponent } from './meun-categ/meun-categ.component';
+import { PageCategoryFileComponent } from './page-category-file/page-category-file.component';
+import { PageCategoryComponent } from './page-category/page-category.component';
 import { PageFiscalComponent } from './page-fiscal/page-fiscal.component';
 import { PageJuridiqueComponent } from './page-juridique/page-juridique.component';
 import { PageSocialComponent } from './page-social/page-social.component';
@@ -40,6 +44,10 @@ const routes: Routes = [
   {path:'expert/article/social',component:PageSocialComponent},
   {path:'expert/article/juridique',component:PageJuridiqueComponent},
   {path:'expert/article/fiscal',component:PageFiscalComponent},
+  {path:'expert/list-category',component:ListCategoryComponent},
+  {path:'expert/list-category-page',component:ListCategoryPageComponent},
+  {path:'expert/page-category',component:PageCategoryComponent},
+  {path:'expert/page-category-file',component:PageCategoryFileComponent}
 ];
 
 @NgModule({

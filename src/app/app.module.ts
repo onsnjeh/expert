@@ -33,6 +33,11 @@ import { PageJuridiqueComponent } from './page-juridique/page-juridique.componen
 import { PageSocialComponent } from './page-social/page-social.component';
 import { PageFiscalComponent } from './page-fiscal/page-fiscal.component';
 import { ListDocumentComponent } from './list-document/list-document.component';
+import { ListCategoryComponent } from './list-category/list-category.component';
+import { ListCategoryPageComponent } from './list-category-page/list-category-page.component';
+import { PageCategoryComponent } from './page-category/page-category.component';
+import { PageCategoryFileComponent } from './page-category-file/page-category-file.component';
+import { BoutonOpenComponent } from './bouton-open/bouton-open.component';
 
 
 @NgModule({
@@ -65,7 +70,12 @@ import { ListDocumentComponent } from './list-document/list-document.component';
     PageJuridiqueComponent,
     PageSocialComponent,
     PageFiscalComponent,
-    ListDocumentComponent
+    ListDocumentComponent,
+    ListCategoryComponent,
+    ListCategoryPageComponent,
+    PageCategoryComponent,
+    PageCategoryFileComponent,
+    BoutonOpenComponent
   ],
   imports: [
     BrowserModule,
