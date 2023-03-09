@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-category.component.css']
 })
 export class ListCategoryComponent {
-
+ //category
+ options = ['All','Juridique', 'Social', 'Fiscal'];
+ selectedOption='All';
 }
