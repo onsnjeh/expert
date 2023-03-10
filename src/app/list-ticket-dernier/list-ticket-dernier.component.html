@@ -14,7 +14,7 @@
   <thead>
       <tr>
        <th><span class="col"></span> id</th>
-       <th><span class="col"></span> Ticket</th>
+       <th><span class="col"></span> Titre</th>
           <th><span class="col"></span> Priority</th>
           <th><span class="col"></span> Category</th>
           <th><span class="col"></span> Date</th>
@@ -23,14 +23,14 @@
   </thead>
 		
 	<tbody>
-		<tr *ngFor="let country of countries; index as i">
-			<th scope="row">{{ i + 1 }}</th>
+		<tr>
+			<td scope="row">{{ item2.id}}</td>
 			<td>
-				{{ country.nameticket }}
+				{{ item2.nom }}
 			</td>
-			<td>{{ country.priority }}</td>
-			<td>{{ country.category }}</td>
-			<td>{{ country.date }}</td>
+			<td>{{ item2.priority }}</td>
+			<td>{{ item2.category }}</td>
+			<td>{{ item2.date }}</td>
 <td><app-bouton-open>
 </app-bouton-open>
 <app-bouton-close-ticket></app-bouton-close-ticket></td>

@@ -10,23 +10,25 @@
        <th><span class="col"></span> Ticket</th>
        <th><span class="col"></span> Nom de document</th>
           <th><span class="col"></span> Category</th>
+          <th><span class="col"></span> Type</th>
           <th><span class="col"></span> Theme</th>
-          <th><span class="col"></span> Nom d'expert</th>
+          <!-- <th><span class="col"></span> Nom d'expert</th> -->
           <th><span class="col"></span> Date</th>
           <th><span class="col"></span> Action</th>
       </tr>
   </thead>
 		
 	<tbody>
-		<tr *ngFor="let country of countries; index as i">
-			<th scope="row">{{ i + 1 }}</th>
+		<tr >
+			<th scope="row">{{ item1.id }}</th>
 			<td>
-				{{ country.nameArticle }}
+				{{ item1.nom }}
 			</td>
-			<td>{{ country.category }}</td>
-   <td>{{ country.theme }}</td>
-   <td>{{ country.expert }}</td>
-			<td>{{ country.date }}</td>
+			<td>{{ item1.category }}</td>
+            <td>{{ item1.type }}</td>
+   <td>{{ item1.theme }}</td>
+   <!-- <td>{{ item1.expert }}</td> -->
+			<td>{{ item1.date }}</td>
             <td><app-bouton-open></app-bouton-open></td>
 
 		</tr>

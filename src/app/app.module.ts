@@ -11,7 +11,7 @@ import { NbreTicketTotalComponent } from './nbre-ticket-total/nbre-ticket-total.
 import { NbreTicketOuvertComponent } from './nbre-ticket-ouvert/nbre-ticket-ouvert.component';
 import { NbreTicketFermeComponent } from './nbre-ticket-ferme/nbre-ticket-ferme.component';
 import { NbreDocumentComponent } from './nbre-document/nbre-document.component';
-
+import {HttpClientModule} from '@angular/common/http';
 import { ListTicketDernierComponent } from './list-ticket-dernier/list-ticket-dernier.component';
 import { ListArticleDernierComponent } from './list-article-dernier/list-article-dernier.component';
 import { DecimalPipe, NgFor } from '@angular/common';
@@ -22,12 +22,14 @@ import { ListTicketComponent } from './list-ticket/list-ticket.component';
 import { BoutonAddDocumentComponent } from './bouton-add-document/bouton-add-document.component';
 import { BoutonCloseTicketComponent } from './bouton-close-ticket/bouton-close-ticket.component';
 import { BoutonOpenComponent } from './bouton-open/bouton-open.component';
-import { ListCategoryComponent } from './list-category/list-category.component';
-import { PriorityComponent } from './priority/priority.component';
-import { TypeComponent } from './type/type.component';
-import { ThemeComponent } from './theme/theme.component';
+
+
 import { SpecialiteComponent } from './specialite/specialite.component';
 import { FormsModule } from '@angular/forms';
+import { ListCategoryComponent } from './list-category/list-category.component';
+import { PriorityComponent } from './priority/priority.component';
+import { ThemeComponent } from './theme/theme.component';
+import { TypeComponent } from './type/type.component';
 
 
 
@@ -53,8 +55,7 @@ import { FormsModule } from '@angular/forms';
     PriorityComponent,
     TypeComponent,
     ThemeComponent,
-    SpecialiteComponent,
-  
+    SpecialiteComponent
 
   ],
   imports: [
@@ -65,7 +66,8 @@ import { FormsModule } from '@angular/forms';
      FormsModule,
      NgbModule,
      NgbCollapseModule,
-     NgbNavModule
+     NgbNavModule,
+     HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
